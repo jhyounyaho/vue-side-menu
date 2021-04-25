@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LeftBar></LeftBar>
+    <Contents></Contents>
+    <RightBar :showInfo="showInfo"></RightBar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LeftBar from "./components/LeftBar";
+import Contents from "./components/Contents";
+import RightBar from "./components/RightBar";
+import { mapState } from "vuex";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    LeftBar,
+    Contents,
+    RightBar,
+  },
+  computed: {
+    ...mapState({
+      showInfo: "showInfo",
+    }),
+  },
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style>
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  height: 100%;
 }
 </style>
