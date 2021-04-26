@@ -6,6 +6,3 @@
 - 데이터 관리 용이하도록 Vuex 사용                  
 - 아이콘 사용                            
                              
-## 결과 이미지            
-<img width="614" alt="layout3" src="https://user-images.githubusercontent.com/42309919/115995502-85d8c780-a616-11eb-90a1-1c52002304c5.PNG">                  
-   
