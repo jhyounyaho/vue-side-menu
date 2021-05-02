@@ -14,7 +14,7 @@
 
 ## 참고 
 ### splitpanes 
-https://www.npmjs.com/package/splitpanes                        
+https://www.npmjs.com/package/splitpanes     <- 요걸로 선택                     
 https://antoniandre.github.io/splitpanes/?ref=madewithvuejs.com                    
-
+https://www.npmjs.com/package/vue-splitpane  
 
